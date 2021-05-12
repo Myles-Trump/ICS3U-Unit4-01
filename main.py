@@ -29,14 +29,14 @@ def main():
             print("You cannot enter a negative integer.")
 
         elif final_number == 0:
-            print("\n The answer of 0 is 1.")
+            print(" The answer of 0 is 1.")
 
         else:
-            print("\nThe answer of {0} is {1}."
+            print("The answer of {0} is {1}."
                   .format(positive_int, final_number))
 
     except Exception:
-        print("\nYou have entered an invalid integer.")
+        print("You have entered an invalid integer.")
 
     finally:
         print("\nDone.")
