@@ -12,14 +12,14 @@ def main():
     loop_counter = 0
 
     # input
-    print("\n", end = "")
+    print("\n", end="")
     positive = input("Enter an integer to: ")
 
     # process & output
     try:
         positive_int = int(positive)
         final_number = 0
-        print("\n", end = "")
+        print("\n", end="")
         while loop_counter < positive_int:
             loop_counter = loop_counter + 1
 
@@ -29,16 +29,18 @@ def main():
             print("You cannot enter a negative integer.")
 
         elif final_number == 0:
-            print("\n The factorial of 0 is 1.")
-        
+            print("\n The answer of 0 is 1.")
+
         else:
-            print("\nThe factorial of {0} is {1}.".format(positive_int, final_number))
+            print("\nThe answer of {0} is {1}."
+                  .format(positive_int, final_number))
 
     except Exception:
         print("\nYou have entered an invalid integer.")
 
     finally:
         print("\nDone.")
+
 
 if __name__ == "__main__":
     main()
